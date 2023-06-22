@@ -45,7 +45,7 @@ pub struct Request {
     pub context: Context,
 
     #[allow(dead_code)]
-    pub(crate) compiler: Option<Arc<Mutex<ApolloCompiler>>>,
+    pub compiler: Option<Arc<Mutex<ApolloCompiler>>>,
 }
 
 impl From<http::Request<graphql::Request>> for Request {
